@@ -1,0 +1,13 @@
+[package]
+name = "hw201"
+version = "0.0.1"
+edition = "2021"
+authors = ["emilyhong <emily.hong@viam.com>"]
+resolver = "2"
+rust-version = "1.83"
+
+[dependencies]
+micro-rdk = {git = "https://github.com/viamrobotics/micro-rdk.git", features = ["esp32"], version = "0.4.0", rev = "380a098"}
+
+[package.metadata.com.viam]
+module = true
